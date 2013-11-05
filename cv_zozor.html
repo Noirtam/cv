@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Le CV de ZOZOR</title>
+		<!-- ********************* -->
+		<!-- **		Zone CSS	** -->
+		<!-- ********************* -->
+		<!-- Google font : "Pacifico" => Pour les titres -->
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<!-- Google font : "Source Sans Pro" -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<!-- Le CSS de notre page -->
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<!-- ********************* -->
+		<!-- **	 Fin : Zone CSS	** -->
+		<!-- ********************* -->
+		<!-- ********************* -->
+		<!-- **		Zone Js		** -->
+		<!-- ********************* -->
+		
+		<!-- ********************* -->
+		<!-- **	Fin : Zone Js	** -->
+		<!-- ********************* -->
+		<script type="text/templates" id="tpl_listLigne">
+			<aside>
+				<img src="{{IMAGE}}" alt="{{CLIENT}}" title="{{CLIENT}}" />
+				<div>
+					<h3>{{DATE}}&nbsp;<span class="poste">{{POSTE}}</span>&nbsp;chez&nbsp;{{CLIENT}}</h3>
+					<p class="description">{{DESCRITION}}</p>
+				</div>
+			</aside>
+		</script>
+	</head>
+	<body>
+		<header>
+			<img id="zozor" src='images/photo.png' alt='zozor' title='zozor' />
+			<h1>Célestin Zozor</h1>	
+			<h2>Intégrateur, mascotte, globe-trotteur et bourrique</h2>
+			<nav>
+				<ul>
+					<li>
+						<a href="#" alt="" id="viadeo">
+							<img src="images/social/viadeo.png" alt="viadeo" title="viadeo" />
+							Mon Viadeo
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="" id="twitter">
+							<img src="images/social/twitter.png" alt="twitter" title="twitter" />
+							Mon Twitter
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="" id="facebook">
+							<img src="images/social/facebook.png" alt="facebook" title="facebook" />
+							Mon Facebook
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="" id="linkedin">
+							<img src="images/social/linkedin.png" alt="linkedin" title="linkedin" />
+							Mon Linkedin
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="" id="mail">
+							<img src="images/social/mail.png" alt="mail" title="mail" />
+							Mon mail
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<section id="competences" class="list_colonnes">
+				<h1><img src='images/titres/competences.png' alt='Compétences' title='Compétences' />Compétences</h1>
+				<div id="tableau_competences">
+					<div id="tpl_competences">
+						<aside>
+							<img src="{{IMAGE}}" alt="{{COMP}}" title="{{COMP}}" />
+							<div>
+								<h3>{{COMP}}</h3>
+								<div class="level level{{LEVEL}}" level="{{LEVEL}}">&nbsp;</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+			<section class="listeLigne">
+				<h1><img src='images/titres/experiences_pro.png' alt='Expériences professionnelles' title='Expériences professionnelles' />Expériences professionnelles</h1>
+				<div id="tableau_experiences">
+					
+				</div>
+			</section>
+			<section id="formations"  class="listeLigne">
+				<h1><img src='images/titres/formations.png' alt="Formations & diplômes" title="Formations & diplômes" />Formations & diplômes</h1>
+				<div id="tableau_formations">
+				</div>
+			</section>
+			<section class="list_colonnes" id="centreInteret">
+				<h1><img src='images/titres/centre_interet.png' alt="Centres d\'interet" title="Centres d'interêt" />Centres d'interêt</h1>
+				<div id="tableau_centresInteret">
+					<div id="tpl_centresInteret">
+						<aside>
+							<img src="{{IMAGE}}" alt="{{TITRE}}" alt="{{TITRE}}" />
+							<div>
+								<h3>{{TITRE}}</h3>
+								<p class="description">{{DESCRITION}}</p>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="script/mustache.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

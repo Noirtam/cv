@@ -1,0 +1,192 @@
+body {
+	margin:0;
+	padding: 0; 
+	width: 800px;
+	margin:auto;
+	background-image: url('images/background.png');
+	font-family: "Source Sans Pro", cursive;
+	color: rgb(102,102,99);
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-weight: normal;
+	color: rgb(0,45,64);
+}
+h2 {
+	color: rgb(3,99,139);
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0,45,64);
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	padding-left: 25px;
+}
+a img {
+	position: absolute;
+	left: 0px;
+}
+
+/**************/
+/** HEADER   **/
+/**************/
+header {
+	padding-top: 10px;
+	position: relative;
+	border-bottom: 2px solid rgba(102,102,99,0.5);
+}
+
+header h1{
+	font-size: 4.5em;
+	vertical-align: top;
+	position: absolute;
+	top:-40px;
+	left:170px;
+}
+
+header h2{
+	position: absolute;
+	top:100px;
+	left:170px;
+}
+
+header img#zozor {
+	padding: 5px;
+	background-color: white;
+	box-shadow: 5px 5px 5px;
+	border-radius: 10px 10px 10px 10px;
+}
+nav {
+	margin-top: 10px;
+	border-top: 2px solid black;
+}
+nav li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+/**************/
+/** CORPS    **/
+/**************/
+section {
+	margin-left: 5px;
+}
+section h1 {
+	position: relative;
+	padding-left: 40px;
+}
+section h1 img {
+	position: absolute;
+	top:5px;
+	left: 0px;
+}
+
+/********************/
+/** Compétences    **/
+/********************/
+/*
+section.list_colonnes aside {
+	display: inline-block;
+	width: 150px;
+	height: 60px;
+	vertical-align: top;
+	position: relative;
+}
+section.list_colonnes aside h3{
+	position: absolute;
+	top: -25px;
+	left: 40px;
+}
+section.list_colonnes aside div.level {
+	position: absolute;
+	left:40px;
+	top: 20px;
+	background-image: url('images/competences/niveau.png');
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 83px;
+}
+*/
+section.list_colonnes aside {
+	vertical-align: top;
+	display: inline-block;
+	width: 170px;
+	margin: 10px;
+}
+section.list_colonnes aside div{
+	display: inline-block;
+}
+section.list_colonnes aside h3{
+	margin: 0;
+	padding: 0;
+}
+section.list_colonnes aside img {
+	vertical-align: top;
+	padding-top: 7px;
+	margin-right: 10px;
+}
+
+section#competences aside div.level {
+	background-image: url('images/competences/niveau.png');
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 83px;
+}
+section#competences aside div.level[level="5"] {
+	background-position: 0% 0%;
+}
+section#competences aside div.level[level="4"] {
+	background-position: 0% 25%;
+}
+section#competences aside div.level[level="3"] {
+	background-position: 0% 50%;
+}
+section#competences aside div.level[level="2"] {
+	background-position: 0% 75%;
+}
+section#competences aside div.level[level="1"] {
+	background-position: 0% 100%;
+}
+
+/********************/
+/** Expériences    **/
+/********************/
+section.listeLigne aside {
+	margin: 0 0 20px 0;
+	padding: 0px;
+	vertical-align: top;
+}
+section.listeLigne aside img {
+	vertical-align: top;
+	margin-right: 20px;
+}
+section.listeLigne aside div {
+	display: inline-block;
+	width: 660px;
+}
+section.listeLigne aside h3{
+	margin: 0;
+	padding: 0;
+}
+
+section#formations aside img{
+	display: none;
+}
+
+section#centreInteret aside {
+	width: 30%;
+}
+section#centreInteret aside div{
+	width: 80%;
+}
+/**
+ * On masque tous nos templates.
+ * On nommera donc tous nos templates avec un id commençant par "tpl_"
+ **/
+*[id^=tpl_]{
+	display:none;
+}
